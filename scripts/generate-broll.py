@@ -34,7 +34,7 @@ BUNDLES_PATH = PROJECT_ROOT / "outputs" / "bundles"
 GOOGLE_DRIVE_BROLL = Path("/Users/santiagomunoz/Library/CloudStorage/GoogleDrive-contacto@innovandohorizontes.com/Mi unidad/BROLL")
 
 # Kie AI Configuration - API correcta
-KIE_AI_API_KEY = "5e1db509c0a31d2aff22516899d22510"
+KIE_AI_API_KEY = os.environ.get("KIE_AI_API_KEY", "")
 KIE_AI_BASE_URL = "https://api.kie.ai/api/v1/jobs"
 KIE_AI_MODEL = "nano-banana-pro"
 
